@@ -47,6 +47,21 @@ a {
     cursor: pointer;
 }
 
+.section-heading {
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem;
+    letter-spacing: -0.1rem;
+}
+
+.section-desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+}
 /* H============ Header ============ */
 /* Logo */
 .header {
@@ -217,4 +232,94 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+
+/* H============ Services ============ */
+.service {
+    padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+
+.service__desc {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service__row {
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Service Item */
+
+.service-item {
+    display: flex;
+    width: 470px;
+    padding: 22px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    position: relative;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.service-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: #eff6fd;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
+    transition: 0.25s;
+}
+
+.service-item__body {
+    margin-left: 19px;
+}
+
+.service-item__heading {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+}
+
+.service__list {
+    margin-bottom: 55px;
 }
