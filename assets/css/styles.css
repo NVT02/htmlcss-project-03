@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -102,7 +103,6 @@ button {
 /* H============ Header ============ */
 /* Logo */
 .header {
-    padding-top: 30px;
     min-height: 100vh;
     background: var(--primary-color);
 }
@@ -154,6 +154,15 @@ button {
 }
 /* Navbar */
 .header-top {
+    position: sticky;
+    top: -18px;
+    z-index: 1;
+    background: var(--primary-color);
+    padding-top: 18px;
+}
+
+.header-top__inner {
+    padding: 12px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -208,7 +217,7 @@ button {
 .hero {
     display: flex;
     align-items: center;
-    margin-top: 76px;
+    padding-top: 64px;
 }
 
 .hero__content {
