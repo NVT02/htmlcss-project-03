@@ -323,3 +323,63 @@ a {
 .service__list {
     margin-bottom: 55px;
 }
+
+/* ============ Work ============ */
+.work {
+    padding: 100px 0;
+    background-color: #f6fbff;
+}
+
+.work__desc {
+    width: 468px;
+}
+
+.work__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 86px;
+}
+
+.work-item {
+    padding: 16px;
+    background: #eaf6ff;
+    border-radius: 0.4rem;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    transform: translateY(-16px);
+    background: var(--secondary-color);
+}
+
+.work-item__border {
+    padding: 43px 42px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.work-item__heading {
+    margin-top: 20px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+}
+
+.work-item__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2e80ce;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+}
